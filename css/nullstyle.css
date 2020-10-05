@@ -1,0 +1,94 @@
+/* стили обнуления для браузеров */
+
+/* убрать дефолтные отступы и границы у всех элементов */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;    
+}
+
+/* поставить по дефолту расчёт размера всех элементов и псевдоэлементов 
+before и after по принципу border-box */
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* убрать изначальные внешние линии у всех элементов в состояниях focus и 
+active */
+:focus, :active {
+    outline: none;
+}
+
+/* убрать изначальные внешние линии у всех ссылок в состояниях focus и active */
+a:focus, a:active {
+    outline: none;
+}
+
+/* сделать данные элементы блочными */
+nav, footer, header, aside {
+    display: block;
+}
+
+/* выровнять html и body по области просмотра, убрать хаотичное масштабирование шрифтов */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%; /* html - задать размер шрифта по умолчанию, 
+    body - убрать лишнее масштабирование в IE, отличное от остальных браузеров */
+    line-height: 1; /* сделать межстрочный интервал равным размеру шрифта 
+    по умолчанию */
+    font-size: 14px; /* выставить фиксированный размер для всех шрифтов */
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* сделать чтобы шрифты в формах были теми же, что у родительских элементов */
+input, button, textarea {
+    font-family: inherit;
+}
+
+/* убрать в IE кнопку очистки поля заполнения */
+input::-ms-clear {
+    display: none;
+}
+
+/* сделать кнопкам курсор как у ссылок */
+button {
+    cursor: pointer;
+}
+
+/* убрать в Firefox рамку внутреннего фокуса у кнопок */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* убрать у ссылок, в том числе посещённых, подчёркивание */
+a, a:visited {
+    text-decoration: none;
+}
+
+/* убрать у ссылок подчёркивание при наведении */
+a:hover {
+    text-decoration: none;
+}
+
+/* убрать базовый стиль оформления списка у соответствующих элементов  */
+ul li {
+    list-style: none;
+}
+
+/* выровнять картинки по верху родительских элементов */
+img {
+    vertical-align: top;
+}
+
+/* задать заголовкам наследуемые от родительских элементов размер 
+и насыщенность шрифта */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}

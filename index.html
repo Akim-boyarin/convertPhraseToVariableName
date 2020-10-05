@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Преобразовать словосочетание в имя переменной</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div class="app" id="app">
+        <h1 class="app__title">Создать имя для переменной (lowerCamelCase).</h1>
+        <div class="app__input">
+            <div class="input">
+                <div class="input__denomination">
+                    <label class="phrase-denomination" for="field">Словосочетание: </label>
+                </div>
+                <div class="input__field">
+                    <input class="phrase-input" type="text" name="field" id="field" v-model="phrase">
+                </div>
+                <div class="input__delete">
+                    <button class="phrase-drop" type="button" v-if="phrase.length !== 0" v-bind:title="deleteMessage"
+                        v-on:click="dropFieldValue"></button>
+                </div>
+            </div>
+        </div>
+        <div class="app__variable-camelcase" v-if="phrase.length !== 0">
+            <div class="variable-camelcase">
+                <div class="variable-camelcase__denomination">Имя переменной:</div>
+                <div class="variable-camelcase__value-container">
+                    <span class="variable-camelcase__value"> {{ convertToVariableName }} </span>
+                </div>
+                <div class="variable-camelcase__copy">
+                    <button class="copy" type="button" v-bind:title="copyMessage" v-on:click="copyValue"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/convertPhraseToVariableName.js"></script>
+    <script src="/node_modules/copy-js/dist/copy.min.js"></script>
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data: {
+                phrase: "",
+                deleteMessage: "Удалить",
+                copyMessage: "Копировать",
+            },
+            computed: {
+                convertToVariableName() {
+                    return convertPhraseToVariableName(this.phrase);
+                },
+            },
+            methods: {
+                dropFieldValue() {
+                    this.phrase = "";
+                },
+                copyValue() {
+                    copy(this.convertToVariableName);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

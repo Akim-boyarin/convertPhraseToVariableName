@@ -1,0 +1,16 @@
+/* firefox */
+.variable-camelcase__value-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(90, 78, 78) rgb(238, 236, 236);
+}
+
+/* chrome etc. */
+.variable-camelcase__value-container::-webkit-scrollbar {
+    height: 4px; 
+}
+
+.variable-camelcase__value-container::-webkit-scrollbar-thumb {
+    background-color: rgb(88, 82, 82);
+    border-radius: 15px;
+} 
+
