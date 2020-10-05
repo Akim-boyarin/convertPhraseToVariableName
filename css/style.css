@@ -74,7 +74,7 @@
 
 .phrase-drop {
     display: none;
-    background: url("icons/delete/delete.svg") no-repeat 50%;
+    background: url("../icons/delete/delete.svg") no-repeat 50%;
     background-size: 24px;
     border: none;
     border-radius: 5px;
@@ -87,7 +87,7 @@
 }
 
 .phrase-drop:hover {
-    background-image: url("icons/delete/delete-hover.svg");
+    background-image: url("../icons/delete/delete-hover.svg");
     background-size: 25px;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .copy {
-    background: url("icons/copy/copy.svg") no-repeat 50%;
+    background: url("../icons/copy/copy.svg") no-repeat 50%;
     background-size: 24px;
     border: none;
     border-radius: 5px;
@@ -143,6 +143,6 @@
 
 
 .copy:hover {
-    background-image: url("icons/copy/copy-hover.svg");
+    background-image: url("../icons/copy/copy-hover.svg");
     background-size: 25px;
 }
