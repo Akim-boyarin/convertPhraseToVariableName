@@ -21,7 +21,6 @@
 }
 
 /* заголовок приложения */
-
 .app__title {
     margin-bottom: 25px;
     font-size: 23px;
@@ -30,7 +29,6 @@
 }
 
 /* поле ввода словосочетания */
-
 .input {
     display: flex;
     flex-direction: row;
@@ -67,6 +65,7 @@
 }
 
 .input__delete {
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,12 +86,11 @@
 }
 
 .phrase-drop:hover {
-    background-image: url("../icons/delete/delete-hover.svg");
+    /* background-image: url("../icons/delete/delete-hover.svg"); */
     background-size: 25px;
 }
 
 /* поле вывода имени переменной */
-
 .variable-camelcase {
     display: flex;
     flex-direction: row;
@@ -126,6 +124,7 @@
 }
 
 .variable-camelcase__copy {
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,6 +132,7 @@
 }
 
 .copy {
+    display: none;
     background: url("../icons/copy/copy.svg") no-repeat 50%;
     background-size: 24px;
     border: none;
@@ -141,8 +141,19 @@
     height: 24px;
 }
 
+.variable-camelcase:hover .copy {
+    display: block;
+}
 
 .copy:hover {
-    background-image: url("../icons/copy/copy-hover.svg");
+    /* background-image: url("../icons/copy/copy-hover.svg"); */
     background-size: 25px;
+}
+
+/* динамический класс - индикатор копирования */
+.copied {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgb(66, 10, 151);
 }

@@ -12,7 +12,7 @@
 
 <body>
     <div class="app" id="app">
-        <h1 class="app__title">Создать имя для переменной (lowerCamelCase).</h1>
+        <h1 class="app__title">Создать имя переменной (lowerCamelCase).</h1>
         <div class="app__input">
             <div class="input">
                 <div class="input__denomination">
@@ -22,7 +22,7 @@
                     <input class="phrase-input" type="text" name="field" id="field" v-model="phrase">
                 </div>
                 <div class="input__delete">
-                    <button class="phrase-drop" type="button" v-if="phrase.length !== 0" v-bind:title="deleteMessage"
+                    <button class="phrase-drop" type="button" v-if="phrase.length !== 0" v-bind:title="tooltips.deleteMessage"
                         v-on:click="dropFieldValue"></button>
                 </div>
             </div>
@@ -30,11 +30,11 @@
         <div class="app__variable-camelcase" v-if="phrase.length !== 0">
             <div class="variable-camelcase">
                 <div class="variable-camelcase__denomination">Имя переменной:</div>
-                <div class="variable-camelcase__value-container">
+                <div class="variable-camelcase__value-container" v-bind:class="{ copied: isCopied }">
                     <span class="variable-camelcase__value"> {{ convertToVariableName }} </span>
                 </div>
                 <div class="variable-camelcase__copy">
-                    <button class="copy" type="button" v-bind:title="copyMessage" v-on:click="copyValue"></button>
+                    <button class="copy" type="button" v-bind:title="tooltips.copyMessage" v-on:click="copyValue"></button>
                 </div>
             </div>
         </div>
@@ -46,9 +46,15 @@
         let app = new Vue({
             el: "#app",
             data: {
+                // фраза/словосочетание в форме для ввода
                 phrase: "",
-                deleteMessage: "Удалить",
-                copyMessage: "Копировать",
+                // всплывающие подсказки
+                tooltips: {
+                    deleteMessage: "Очистить",
+                    copyMessage: "Копировать",
+                },
+                // индикатор, отображающий копирование
+                isCopied: false,
             },
             computed: {
                 convertToVariableName() {
@@ -61,6 +67,11 @@
                 },
                 copyValue() {
                     copy(this.convertToVariableName);
+                    // отображение в браузере
+                    this.isCopied = true;
+                    setTimeout(() => {
+                        this.isCopied = false;
+                    }, 500);
                 }
             }
         });
