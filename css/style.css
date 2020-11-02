@@ -21,8 +21,6 @@
 }
 
 /* преобразование в латиницу */
-.app__convertation {
-}
 .convertation-condition {
     margin-left: 10px;
     display: flex;
