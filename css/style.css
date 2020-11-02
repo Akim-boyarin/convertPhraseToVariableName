@@ -20,6 +20,34 @@
     margin: 12px 0;
 }
 
+/* преобразование в латиницу */
+.app__convertation {
+}
+.convertation-condition {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.convertation-condition__input {
+    margin-right: 8px;
+}
+.convertation-condition__label {
+    font-size: 16px;
+}
+
+.convertation-condition__input input,
+.convertation-condition__label label {
+    cursor: pointer;
+}
+
+/* анимация открытия-скрытия */
+.convertation-enter-active, .convertation-leave-active {
+    transition: opacity .5s;
+  }
+  .convertation-enter, .convertation-leave-to {
+    opacity: 0;
+  }
+
 /* заголовок приложения */
 .app__title {
     margin-bottom: 25px;
@@ -47,7 +75,14 @@
 .phrase-denomination {
     font-size: 16px;
     font-weight: 800;
+    cursor: pointer;
 }
+
+.phrase-denomination:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(66, 10, 151);
+}
+
 .input__field {
     display: flex;
     justify-content: center;
