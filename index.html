@@ -41,7 +41,11 @@
     </div>
 
     <script src="js/convertPhraseToVariableName.js"></script>
+    <script src="js/convertToLatin.js"></script>
     <script src="node_modules/copy-js/dist/copy.js"></script>
+    <script>
+        const transliterate = require('node_modules/@sindresorhus/transliterate');
+    </script>
     <script>
         let app = new Vue({
             el: "#app",
@@ -58,7 +62,8 @@
             },
             computed: {
                 convertToVariableName() {
-                    return convertPhraseToVariableName(this.phrase);
+                    let latinPhrase = convertToLatin(this.phrase);
+                    return convertPhraseToVariableName(latinPhrase);
                 },
             },
             methods: {
