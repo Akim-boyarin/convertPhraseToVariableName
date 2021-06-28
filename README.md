@@ -32,3 +32,8 @@ ____
 [![Witch](https://sun9-21.userapi.com/impg/RvuWlAKhAOhTHOY7p7-Zqd1_GrWEorwzdbd1_w/XlYl7fwcjww.jpg?size=1440x1748&quality=96&sign=e06d51d9837917960aa06bcb148d57b3&type=album)](https://www.youtube.com/watch?v=jqt8I8UxtK0)
 ____
 [![Мой вк](https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg)](https://vk.com/akim_boyarinov)
+
+
+| LEFT | CENTER | RIGHT |
+|----|----|----|
+|текст|текст|текст|
