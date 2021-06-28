@@ -26,3 +26,5 @@ ____
 
 https://www.youtube.com/watch?v=BlRjXb-oZzE    
 [Ошибки работы на лапах](https://www.youtube.com/watch?v=BlRjXb-oZzE)
+____
+![нарисованная ведьма](https://vk.com/feed?section=likes&z=photo-111160014_457357675%2Fliked14668164)
