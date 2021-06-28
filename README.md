@@ -35,3 +35,5 @@ ____
 :white_check_mark: Сделано    
 :negative_squared_cross_mark: Не сделано    
 :black_square_button: Делать или нет?
+
+> Цитата
