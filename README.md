@@ -6,4 +6,4 @@
   2. Большой куш.
 2. Игры:
   1. The Witcher 3: Wild Hunt
-  2. Starcraft 2;
+  2. Starcraft 2; 
