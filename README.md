@@ -34,6 +34,6 @@ ____
 [![Мой вк](https://upload.wikimedia.org/wikipedia/commons/2/21/VK.com-logo.svg)](https://vk.com/akim_boyarinov)
 
 
-| LEFT   | CENTER   | RIGHT   |
+| LEFT | CENTER | RIGHT |
 |----|----|----|
 |текст|текст|текст|
