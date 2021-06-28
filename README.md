@@ -29,4 +29,4 @@ https://www.youtube.com/watch?v=BlRjXb-oZzE
 ____
 ![нарисованная ведьма](https://sun9-21.userapi.com/impg/RvuWlAKhAOhTHOY7p7-Zqd1_GrWEorwzdbd1_w/XlYl7fwcjww.jpg?size=1440x1748&quality=96&sign=e06d51d9837917960aa06bcb148d57b3&type=album)
 ____
-![блокнот с рисунками](C:/Users/Akim/Downloads/wa-lFhYARpg.jpg)
+![блокнот с рисунками](C:/Users/Akim/Downloads/wa-lFhYARpg)
