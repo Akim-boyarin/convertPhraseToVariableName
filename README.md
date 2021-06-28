@@ -24,5 +24,5 @@ ____
   + [ ] Убрать посуду
 
 
-https://www.youtube.com/watch?v=BlRjXb-oZzE
+https://www.youtube.com/watch?v=BlRjXb-oZzE    
 [Ошибки работы на лапах](https://www.youtube.com/watch?v=BlRjXb-oZzE)
