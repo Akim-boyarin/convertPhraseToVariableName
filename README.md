@@ -22,3 +22,6 @@ ____
 + [ ] Посудомоечная машина:
   + [X] Запустить
   + [ ] Убрать посуду
+
+
+https://www.youtube.com/watch?v=BlRjXb-oZzE
