@@ -3,5 +3,5 @@
 
 
 | LEFT-LEFT-LEFT | CENTER-CENTER-CENTER | RIGHT-RIGHT-RIGHT |
-|:-|:-:|-:|
+|:---|:---:|-:|
 |текст-текст|текст-текст|текст-текст|
