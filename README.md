@@ -75,8 +75,5 @@ __Купить:__
   
   
   __Мои любимые компьютерные игры:__
-  1. RPG:
-      1. Thw Witcher 3: Wild Hunt;
-      2. Nox;
-  2. Strategy:
-      1. Starcraft 2;
+  1. The Witcher 3: Wild Hunt;
+  2. Starcraft 2;
