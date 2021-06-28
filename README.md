@@ -32,5 +32,5 @@ ____
 Заголовок 2
 --
 
-:white_check_mark: Сделано
+:white_check_mark: Сделано    
 :negative_squared_cross_mark: Не сделано
