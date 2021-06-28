@@ -19,6 +19,6 @@ ____
 2. Пункт.
 4. Пункт.
 ____
-i. Point.
-ii. Point.
-iii. Point.
+i Point.
+ii Point.
+iii Point.
